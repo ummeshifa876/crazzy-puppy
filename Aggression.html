@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <!-- bootstrap css -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <!-- bootstrap icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+</head>
+
+<style>
+
+
+
+body{
+
+overflow-x:hidden;
+
+}
+
+  .navbar-light .navbar-brand {
+    color: #422419;
+    font-family: var("ClassicRootsPersonalUseRegular");
+  }
+
+  @font-face {
+    font-family: ClassicRootsPersonalUseRegular;
+    src: url("assets/fonts/ClassicRootsPersonalUseRegular-8MwDZ.ttf");
+  }
+
+  .navbar-brand {
+    font-family: ClassicRootsPersonalUseRegular;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+    font-size: x-large;
+
+  }
+
+  a {
+    text-decoration: none;
+    color: #422419;
+  }
+
+  a:hover {
+    text-decoration: none;
+    color: #422419;
+  }
+
+  .navbar-light .navbar-nav .nav-link {
+    color: #422419;
+
+  }
+
+  @font-face {
+    font-family: QuietlyEndureRegular;
+    src: url("assets/fonts/QuietlyEndureRegular-DO3lW.ttf");
+  }
+
+  .navbar-nav>li>a {
+    font-family: QuietlyEndureRegular;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+    font-size: larger;
+
+  }
+
+  .navbar-light .navbar-nav .nav-link:hover {
+    color: white;
+    background-color: #422419;
+  }
+
+  div#navbarSupportedContent {
+    color: white;
+
+  }
+
+  ul.dropdown-menu.show {
+    background-color: #422419;
+  }
+
+  a.dropdown-item {
+    color: white;
+  }
+
+  .dropdown-item:active {
+    background-color: #2b1710;
+  }
+
+  .dropdown-item:hover {
+    color: white;
+    background-color: #2b1710;
+  }
+
+  ul.dropdown-menu.show {
+    display: table;
+    border-radius: 0px;
+    width: 100%;
+    text-align: center;
+    left: 0;
+    right: 0;
+    background-color: #422419;
+  }
+
+  .list-inline {
+    padding-left: 0;
+    list-style: none;
+    display: table;
+    width: 100%;
+    text-align: center;
+    left: 0;
+    right: 0;
+    background-color: #422419;
+    position: relative;
+  }
+
+
+  .footertext {
+    color: #422419;
+  }
+
+  .footerline {
+    color: #2b1710;
+    height: 2px;
+
+  }
+
+  .footerheading {
+    font-size: x-large;
+  }
+
+  .bg {
+    background-image: url('assets/img/p6.jpg');
+    min-height: 500px;
+    position: relative;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+  }
+
+  @font-face {
+    font-family: Haster;
+    src: url("assets/fonts/Haster-6Y4Po.ttf");
+  }
+
+  .sliderheading {
+    font-family: Haster;
+  }
+
+  .bg2 {
+    background-image: url('assets/img/backgroundpara.jpg');
+    min-height: 400px;
+    position: relative;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    opacity: 0.90;
+  }
+
+  .trainpara {
+    color: #422419;
+  }
+
+  .trainparah {
+    color: #2b1710;
+  }
+
+  .headings {
+    font-family: gothamblack,Helvetica,Arial,sans-serif;
+    color: #422419;
+    font-weight: bolder;
+  }
+
+  .btn-primary {
+    color: #fff;
+    background-color: #422419;
+    border-radius: 10px 10px 10px 10px;
+    border: none;
+  }
+
+  .btn-primary:hover {
+    color: #fff;
+    background-color: #2b1710;
+    border-radius: 10px 10px 10px 10px;
+    border: none;
+  }
+
+  .card {
+    background-color: #f8f9fa;
+    ;
+
+  }
+
+  .card:hover {
+    background-color: #e1e0e0;
+
+  }
+
+  .headingscontent {
+    color: #422419;
+
+  }
+
+  .content {
+    color: #422419;
+  }
+
+  .content:hover {
+    color: #2b1710;
+    font-weight: bold;
+  }
+
+  .blogcontent {
+    color: #422419;
+    font-size: larger;
+    font-family: 'Times New Roman', Times, serif;
+  }
+</style>
+
+<body>
+  <!-- navbar start -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">CRAZY PUPPY</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              BREEDS
+            </a>
+            <ul class="dropdown-menu" role="menu">
+              <ul class='list-inline' aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="American Dogs.html">American dogs</a></li>
+                <li><a class="dropdown-item" href="Asian Dogs.html">Asian dogs</a></li>
+                <li><a class="dropdown-item" href="French Dogs.html">French dogs</a></li>
+                <li><a class="dropdown-item" href="German Dogs.html">German dogs</a></li>
+
+              </ul>
+            </ul>
+          </li>
+
+          <li class="nav-item ">
+            <a class="nav-link" href="Pets.html">
+              PETS
+            </a>
+          </li>
+
+          <li class="nav-item ">
+            <a class="nav-link" href="blog.html">
+              Blog
+            </a>
+          </li>
+
+          <li class="nav-item ">
+            <a class="nav-link" href="Nutrition.html">
+              Nutritions
+            </a>
+          </li>
+        </ul>
+        </ul>
+
+        <ul class="navbar-nav ">
+          <li class="nav-item ">
+            <a class="nav-link" href="index.html" id="navbarDropdown">
+              HOME
+            </a>
+          </li>
+          <li class="nav-item ">
+            <a class="nav-link" href="aboutus.html" id="navbarDropdown">
+              ABOUT US
+            </a>
+          </li>
+          <li class="nav-item ">
+            <a class="nav-link" href="contactus.html" id="navbarDropdown">
+              CONTACT
+            </a>
+          </li>
+          <li class="nav-item ">
+            <a class="nav-link" href="FAQ.html" id="navbarDropdown">
+              FAQ
+            </a>
+          </li>
+          <li class="nav-item ">
+            <a class="nav-link" href="reviews.html" id="navbarDropdown">
+              REVIEWS
+            </a>
+          </li>
+        </ul>
+
+        <div class="iconsa ms-4">
+          <a href="https://www.facebook.com/" class="unstyled"><i class="bi-facebook"></i></a>
+          <a href="https://www.instagram.com/"><i class="bi-instagram ms-2"></i></a>
+          <a href="https://twitter.com/"><i class="bi-twitter ms-2"></i></a>
+        </div>
+
+      </div>
+  </nav>
+  <!-- navbar end -->
+
+
+  <!-- header  -->
+  <div class="row bg">
+    <div class="mt-5 pt-5 pb-5">
+      <h1 class="sliderheading mt-5 pt-5 text-center text-white">Dogs Problem</h1>
+      <h5 class="text-white text-center">Having a dog is a joy for singles, couples and families. But it doesn't always
+        come without
+        problems the <br> most common dog problems you'll experience can be resolved with simple solutions. </h5>
+
+    </div>
+  </div>
+  <!-- Header end -->
+
+  <!-- Blog -->
+  <div class="container">
+    <div class="row">
+      <div class="col-md-3 col-sm-6">
+        <div class="card my-5 shadow h-45 ">
+          <div class="container">
+            <h5 class="headingscontent mt-3">Contents </h5>
+            <hr class="content">
+            <a href="Aggression.html">
+              <p class="content">Problem 1: Aggression</p>
+            </a>
+            <a href="Barking.html">
+              <p class="content">Problem 2: Barking</p>
+            </a>
+            <a href="Chewing.html">
+              <p class="content">Problem 3: Chewing</p>
+            </a>
+            <a href="Pulling.html">
+              <p class="content">Problem 4: Pulling</p>
+            </a>
+            <a href="Jumping Up.html">
+              <p class="content">Problem 5: Jumping Up</p>
+            </a>
+            <div class="iconsa text-center pb-3">
+              <a href="https://www.facebook.com/" class="unstyled"><i class="bi-facebook"></i></a>
+              <a href="https://www.instagram.com/"><i class="bi-instagram ms-2"></i></a>
+              <a href="https://twitter.com/"><i class="bi-twitter ms-2"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-9 col-sm-6">
+        <div class="container my-5 bg-light text-center pb-5 shadow">
+          <div class="d-flex flex-column justify-content-center h-100" style="top: 0">
+            <h1 class="headings mt-3">Aggression </h1>
+          </div>
+          <img src="assets/img/agg3.jpg" class="img-fluid rounded w-75 pt-4 pb-5">
+          <p class="blogcontent">Dog behavior problems are often misunderstood or mishandled by dog owners. Perhaps you
+            are new to dog ownership, considering getting a dog, or just wish to help your dog with a challenging issue.
+            <br> <br>
+          </p>
+          <p class="blogcontent">When we hear the term ‘aggression’, our minds tend to jump to horror stories of dog’s
+            attacking and mauling people, however, most aggressive traits are much more subtle than that. Regardless,
+            they can still be very dangerous if not corrected. So, how can you tell if your pooch is displaying some
+            aggressive natures? Perhaps they growl when you tell them off or try to get them off the bed? Do they seem
+            to ‘guard’ their food bowl and toys and bare teeth whenever you come near them? Or maybe they bark and pull
+            towards other dogs on the walk in an unfriendly manner? These are all signs of aggression. If these
+            tendencies are ignored, it is likely that one day, this will result in your dog causing a bite or injury. If
+            you have noticed any of these traits in your pet, immediate action is imperative.<br> <br>
+          </p>
+          <h2 class="headings mt-3">How to fix it</h2>
+          <p class="blogcontent">
+            Often times, aggression is caused by a negative experience. Has anything happened to them that you think
+            could have caused their aversion to a certain object, individual, or situation? Look out for your dog’s
+            triggers. Are they perfectly friendly to humans but can’t stand being around other dogs? Or do they react
+            negatively when you reach for their collar? Try to determine what could be causing their aggressive
+            behavior. Positive reinforcement is also recommended, every time your pooch is well behaved, praise them,
+            and give them a treat. The better you make them feel, the more they will begin to act in a desirable way in
+            order to please you and reap the rewards.
+
+            Be aware that creating boundaries and limits may at first cause your already aggressive dog to become more
+            aggressive, so if the issue is serious, seek help from a professional dog trainer. Ask your vet for a list
+            of local dog trainers in your area that specialize in dealing with aggressive behavior..<br> <br>
+          </p>
+
+
+
+        </div>
+
+        <!-- End Blog -->
+      </div>
+    </div>
+  </div>
+
+
+
+  <!--Footer-->
+
+  <div class="row bg-light text-dark m-0 p-0px-0 pt-2">
+
+    <div class="col-md-3 footertext">
+      <a class="navbar-brand ms-3" href="index.html">CRAZY PUPPY</a>
+
+      <hr class="footerline">
+      <p>We consider it an honor to provide the highest level of veterinary care and service to the
+        pets and families of our community. We look forward to helping your pet have as many happy, healthy years with
+        you as possible!</p>
+    </div>
+
+    <div class="col-md-3 footertext">
+      <h3 class="text-center footerheading mt-2">Explore</h3>
+      <hr>
+      <ul class="list-unstyled text-center ">
+        <ul class="list-unstyled text-center">
+          <li>
+            <a href="index.html">Home</a>
+          </li>
+          <li>
+            <a href="Pets.html">Breeds</a>
+          </li>
+          <li>
+            <a href="Pets.html">Pets</a>
+          </li>
+          <li>
+            <a href="blog.html">Blog</a>
+          </li>
+          <li>
+            <a href="Nutrition.html">Nutrition</a>
+          </li>
+          <li>
+            <a href="aboutus.html">About US</a>
+          </li>
+          <li>
+            <a href="contactus.html">Contact</a>
+          </li>
+          <li>
+            <a href="FAQ.html">FAQ</a>
+          </li>
+        </ul>
+    </div>
+
+    <div class="col-md-3 footertext">
+      <h3 class="text-center footerheading mt-2">All Time Famous Dogs</h3>
+      <hr class="footerline">
+      <ul class="list-unstyled text-center">
+        <li>
+          <a href="American Dogs.html">American dogs</a>
+        </li>
+        <li>
+          <a href="Asian Dogs.html">Asian dogs</a>
+        </li>
+        <li>
+          <a href="French Dogs.html">French dogs</a>
+        </li>
+        <li>
+          <a href="German Dogs.html">German dogs</a>
+        </li>
+
+      </ul>
+    </div>
+
+    <div class="col-md-3 footertext">
+      <h3 class="text-center footerheading mt-2">Contact Us</h3>
+      <hr class="footerline">
+      <ul class="list-unstyled">
+        <li>
+          <div class="iconsa">
+            <a href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox?compose=jrjtXJTXxlkXLRqClmWJvDtjMVFjMQXwHTlQGHtRvgTDXlNJstbBkdBszSNLvGZxSJDDnptB"
+              class="unstyled"><i class="bi-envelope-fill"></i>
+              Email</a>
+        </li>
+        <li>
+          <a href="#" class="unstyled"><i class="bi-telephone-fill"></i>
+            03123456789</a>
+        </li>
+        <li>
+          <a href="#" class="unstyled"><i class="bi-telephone-fill"></i>
+            03222111134</a>
+        </li>
+        <li>
+          <a href="#" class="unstyled"><i class="bi-geo-alt-fill"></i>
+            SD-1, Block A North Nazimabad Town, Karachi, Karachi City, Sindh </a>
+        </li>
+      </ul>
+      <div class="iconsa text-center">
+        <a href="https://www.facebook.com/" class="unstyled"><i class="bi-facebook"></i></a>
+        <a href="https://www.instagram.com/"><i class="bi-instagram ms-2"></i></a>
+        <a href="https://twitter.com/"><i class="bi-twitter ms-2"></i></a>
+      </div>
+    </div>
+    <hr class="footerline">
+    <p class="footertext">&#169 2017-2018 Company. Inc-<a href="#">Privacy</a>-Terms</p>
+  </div>
+  </div>
+
+
+
+  <!--- jquery -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <!-- bootstrap Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+
+
+
+</body>
+
+</html>
